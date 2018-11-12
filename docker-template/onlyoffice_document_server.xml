@@ -2,25 +2,21 @@
 <Containers>
   <Date>2018-11-12</Date>
   <Beta>True</Beta>
-  <Category>HomeAutomation Tools</Category>
-  <Name>Facebox</Name>
-  <Project>https://machinebox.io/docs/facebox</Project>
+  <Category>Productivity</Category>
+  <Name>Onlyoffice Document Server</Name>
+  <Project>https://www.onlyoffice.com/</Project>
   <Overview>
-    Facebox detects and identifies faces in photos. You can teach facebox with as little as one sample image.
+    ONLYOFFICE Document Server is an online office suite comprising viewers and editors for texts, spreadsheets and presentations, fully compatible with Office Open XML formats: .docx, .xlsx, .pptx and enabling collaborative editing in real time.
   </Overview>
-  <Description>Facebox required that you have an API Key which you can obtain for free by clicking <a href="https://machinebox.io/login?return_url=%2Faccount">here</a>. [br][br]</Description>
-  <Registry>https://hub.docker.com/r/machinebox/facebox/</Registry>
+  <Description>
+	HTTPS Support can be enable by placing cert.crt and cert.key in the Data Folder
+  </Description>
+  <Registry>https://hub.docker.com/r/onlyoffice/documentserver/</Registry>
   <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
-  <Repository>machinebox/facebox</Repository>
+  <Repository>onlyoffice/documentserver</Repository>
   <Support>http://localhost/</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Environment>
-    <Variable>
-      <Name>MB_KEY</Name>
-      <Value>The API Key goes here!</Value>
-    </Variable>
-  </Environment>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
