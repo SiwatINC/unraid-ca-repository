@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2018-11-12</Date>
+  <Beta>True</Beta>
+  <Category>HomeAutomation Tools</Category>
+  <Name>Facebox</Name>
+  <Project>https://machinebox.io/docs/facebox</Project>
+  <Overview>
+    Facebox detects and identifies faces in photos. You can teach facebox with as little as one sample image.
+  </Overview>
+  <Description>Facebox required that you have an API Key which you can obtain for free by clicking <a href="https://machinebox.io/login?return_url=%2Faccount">here</a>. [br][br]</Description>
+  <Registry>https://hub.docker.com/r/machinebox/facebox/</Registry>
+  <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
+  <Repository>machinebox/facebox</Repository>
+  <Support>http://localhost/</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>MB_KEY</Name>
+      <Value>The API Key goes here!</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment/>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <Banner></Banner>
+  <Icon>https://machinebox.io/assets/static/img/boxes/facebox.jpg</Icon>
+</Containers>
