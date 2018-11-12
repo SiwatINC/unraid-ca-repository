@@ -8,9 +8,7 @@
   <Overview>
     Facebox detects and identifies faces in photos. You can teach facebox with as little as one sample image.
   </Overview>
-  <Description>
-    Facebox required that you have an API Key which you can obtain for free by visiting https://machinebox.io/login?return_url=%2Faccount[br][br]
-  </Description>
+  <Description>Facebox required that you have an API Key which you can obtain for free by visiting https://machinebox.io/login?return_url=%2Faccount[br][br]</Description>
   <Registry>https://hub.docker.com/r/machinebox/facebox/</Registry>
   <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
   <Repository>machinebox/facebox</Repository>
