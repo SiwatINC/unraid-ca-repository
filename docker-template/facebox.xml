@@ -12,7 +12,7 @@
   <Registry>https://hub.docker.com/r/machinebox/facebox/</Registry>
   <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
   <Repository>machinebox/facebox</Repository>
-  <Support>http://localhost/</Support>
+  <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
