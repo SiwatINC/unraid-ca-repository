@@ -14,21 +14,48 @@
   <Registry>https://hub.docker.com/r/onlyoffice/documentserver/</Registry>
   <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
   <Repository>onlyoffice/documentserver</Repository>
-  <Support>http://localhost/</Support>
+  <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/onlyoffice/logs</HostDir>
+      <ContainerDir>/var/log/onlyoffice</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/onlyoffice/Data</HostDir>
+      <ContainerDir>/var/www/onlyoffice/Data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/onlyoffice/lib</HostDir>
+      <ContainerDir>/var/lib/onlyoffice</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/onlyoffice/database</HostDir>
+      <ContainerDir>/var/lib/postgresql</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
         <HostPort>8080</HostPort>
-        <ContainerPort>8080</ContainerPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>4430</HostPort>
+        <ContainerPort>443</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
   </Networking>
   <Environment/>
-  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <Banner></Banner>
-  <Icon>https://machinebox.io/assets/static/img/boxes/facebox.jpg</Icon>
+  <Icon>https://pbs.twimg.com/profile_images/801693107125362689/al5MQBQM_normal.jpg</Icon>
 </Containers>
