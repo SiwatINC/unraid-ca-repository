@@ -9,7 +9,7 @@
     ONLYOFFICE Document Server is an online office suite comprising viewers and editors for texts, spreadsheets and presentations, fully compatible with Office Open XML formats: .docx, .xlsx, .pptx and enabling collaborative editing in real time.
   </Overview>
   <Description>
-	HTTPS Support can be enable by placing cert.crt and cert.key in the Data Folder
+	HTTPS Support can be enable by placing onlyoffice.crt and onlyoffice.key in the Data Folder
   </Description>
   <Registry>https://hub.docker.com/r/onlyoffice/documentserver/</Registry>
   <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
