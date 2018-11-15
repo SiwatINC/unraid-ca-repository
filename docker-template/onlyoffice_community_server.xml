@@ -5,39 +5,34 @@
   <Category>Productivity</Category>
   <Name>Onlyoffice Document Server</Name>
   <Category>Productivity Tools</Category>
-  <Name>OnlyOfficeDocumentServer</Name>
+  <Name>OnlyOffice Community Server</Name>
   <Project>https://www.onlyoffice.com/</Project>
   <Overview>
     ONLYOFFICE Document Server is an online office suite comprising viewers and editors for texts, spreadsheets and presentations, fully compatible with Office Open XML formats: .docx, .xlsx, .pptx and enabling collaborative editing in real time.
   </Overview>
   <Description>
-	HTTPS Support can be enable by placing cert.crt and cert.key in the Data Folder
+	HTTPS Support can be enable by placing onlyoffice.crt and onlyoffice.key in the Data Folder
   </Description>
-  <Registry>https://hub.docker.com/r/onlyoffice/documentserver/</Registry>
+  <Registry>https://hub.docker.com/r/onlyoffice/communityserver/</Registry>
   <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
-  <Repository>onlyoffice/documentserver</Repository>
+  <Repository>onlyoffice/communityserver</Repository>
   <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/onlyoffice/logs</HostDir>
+      <HostDir>/mnt/user/appdata/onlyofficecs/logs</HostDir>
       <ContainerDir>/var/log/onlyoffice</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/onlyoffice/Data</HostDir>
+      <HostDir>/mnt/user/appdata/onlyofficecs/Data</HostDir>
       <ContainerDir>/var/www/onlyoffice/Data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/onlyoffice/lib</HostDir>
-      <ContainerDir>/var/lib/onlyoffice</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/onlyoffice/database</HostDir>
-      <ContainerDir>/var/lib/postgresql</ContainerDir>
+      <HostDir>/mnt/user/appdata/onlyofficecs/database</HostDir>
+      <ContainerDir>/var/lib/mysql</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
