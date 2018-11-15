@@ -2,8 +2,13 @@
 <Containers>
   <Date>2018-11-12</Date>
   <Beta>True</Beta>
+<<<<<<< HEAD
   <Category>Productivity</Category>
   <Name>Onlyoffice Document Server</Name>
+=======
+  <Category>Productivity Tools</Category>
+  <Name>OnlyOfficeDocumentServer</Name>
+>>>>>>> master
   <Project>https://www.onlyoffice.com/</Project>
   <Overview>
     ONLYOFFICE Document Server is an online office suite comprising viewers and editors for texts, spreadsheets and presentations, fully compatible with Office Open XML formats: .docx, .xlsx, .pptx and enabling collaborative editing in real time.
