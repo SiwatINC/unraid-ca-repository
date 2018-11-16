@@ -3,7 +3,7 @@
   <Date>2018-11-16</Date>
   <Beta>True</Beta>
   <Category>HomeAutomation Tools</Category>
-  <Name>Home Bridge</Name>
+  <Name>HomeBridge</Name>
   <Project>https://github.com/nfarina/homebridge</Project>
   <Overview>
     Homebridge is a lightweight NodeJS server you can run on your home network that emulates the iOS HomeKit API. It supports Plugins, which are community-contributed modules that provide a basic bridge from HomeKit to various 3rd-party APIs provided by manufacturers of "smart home" devices.
@@ -16,7 +16,7 @@
   </Description>
   <Registry>https://hub.docker.com/r/siwatinc/homebridge_unraid/</Registry>
   <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
-  <Repositorysiwatinc/homebridge_unraid</Repository>
+  <Repository>siwatinc/homebridge_unraid</Repository>
   <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
@@ -34,18 +34,7 @@
     </Volume>
   </Data>
   <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8080</HostPort>
-        <ContainerPort>80</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>4430</HostPort>
-        <ContainerPort>443</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
+    <Mode>host</Mode>
     </Publish>
   </Networking>
   <Environment/>
