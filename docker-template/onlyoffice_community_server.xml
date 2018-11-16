@@ -9,7 +9,7 @@
     ONLYOFFICE Community Server is a free open source collaborative system developed to manage documents, projects, customer relationship and email correspondence, all in one place.
   </Overview>
   <Description>
-	HTTPS Support can be enable by placing onlyoffice.crt and onlyoffice.key in the Data Folder
+	HTTPS Support can be enable creating a "certs" folder in the data directory and placing onlyoffice.crt and onlyoffice.key in it
   </Description>
   <Registry>https://hub.docker.com/r/onlyoffice/communityserver/</Registry>
   <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
