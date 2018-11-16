@@ -23,7 +23,7 @@
   <Environment>
     <Variable>
       <Name>packages</Name>
-      <Value>homebridge-pilight</Value>
+      <Value>homebridge-pilight homebridge-info</Value>
     </Variable>
   </Environment>
   <Data>
