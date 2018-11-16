@@ -14,9 +14,9 @@
       2. create the container
       3. create the config.json in the homebridge directory
   </Description>
-  <Registry>https://hub.docker.com/r/machinebox/facebox/</Registry>
+  <Registry>https://hub.docker.com/r/siwatinc/homebridge_unraid/</Registry>
   <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
-  <Repository>machinebox/facebox</Repository>
+  <Repositorysiwatinc/homebridge_unraid</Repository>
   <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
@@ -26,6 +26,7 @@
       <Value>homebridge-pilight homebridge-info</Value>
     </Variable>
   </Environment>
+  
   <Networking>
     <Mode>host</Mode>
   </Networking>
