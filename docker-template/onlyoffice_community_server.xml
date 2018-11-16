@@ -7,6 +7,7 @@
   <Project>https://www.onlyoffice.com/</Project>
   <Overview>
     ONLYOFFICE Community Server is a free open source collaborative system developed to manage documents, projects, customer relationship and email correspondence, all in one place.
+	  HTTPS Support can be enable creating a "certs" folder in the data directory and placing onlyoffice.crt and onlyoffice.key in it
   </Overview>
   <Description>
 	HTTPS Support can be enable creating a "certs" folder in the data directory and placing onlyoffice.crt and onlyoffice.key in it
