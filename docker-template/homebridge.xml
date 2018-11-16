@@ -23,7 +23,7 @@
   <Environment>
     <Variable>
       <Name>packages</Name>
-      <Value>homebridge-pilight homebridge-info</Value>
+      <Value>homebridge-pilight</Value>
     </Variable>
   </Environment>
   <Data>
@@ -35,9 +35,7 @@
   </Data>
   <Networking>
     <Mode>host</Mode>
-    </Publish>
   </Networking>
-  <Environment/>
   <Banner></Banner>
   <Icon>https://i1.wp.com/www.deviousweb.com/wp-content/uploads/2017/06/HomeKit.png</Icon>
 </Containers>
