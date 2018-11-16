@@ -26,7 +26,13 @@
       <Value>homebridge-pilight homebridge-info</Value>
     </Variable>
   </Environment>
-  
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/homebridge</HostDir>
+      <ContainerDir>/root/.homebridge</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
   <Networking>
     <Mode>host</Mode>
   </Networking>
