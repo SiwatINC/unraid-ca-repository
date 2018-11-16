@@ -8,7 +8,12 @@
   <Overview>
     Homebridge is a lightweight NodeJS server you can run on your home network that emulates the iOS HomeKit API. It supports Plugins, which are community-contributed modules that provide a basic bridge from HomeKit to various 3rd-party APIs provided by manufacturers of "smart home" devices.
   </Overview>
-  <Description>Facebox required that you have an API Key which you can obtain for free by going to https://machinebox.io/login?return_url=%2Faccount [br][br]</Description>
+  <Description>
+    Instruction:
+      1. in the packages variable place the package name you wanted in the box (Example is in the box, Plugin list is in https://www.npmjs.com/search?q=homebridge-plugin)
+      2. create the container
+      3. create the config.json in the homebridge directory
+  </Description>
   <Registry>https://hub.docker.com/r/machinebox/facebox/</Registry>
   <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
   <Repository>machinebox/facebox</Repository>
@@ -17,22 +22,14 @@
   <Privileged>false</Privileged>
   <Environment>
     <Variable>
-      <Name>MB_KEY</Name>
-      <Value>The API Key goes here!</Value>
+      <Name>packages</Name>
+      <Value>homebridge-pilight homebridge-info</Value>
     </Variable>
   </Environment>
   <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8080</HostPort>
-        <ContainerPort>8080</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
+    <Mode>host</Mode>
   </Networking>
   <Environment/>
-  <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <Banner></Banner>
-  <Icon>https://machinebox.io/assets/static/img/boxes/facebox.jpg</Icon>
+  <Icon>https://camo.githubusercontent.com/97c6fb19fc469358ceada9d9abd96fa65fc14a0f/68747470733a2f2f636c2e6c792f3939653638616334396365662f4c6f676f32782e706e67</Icon>
 </Containers>
