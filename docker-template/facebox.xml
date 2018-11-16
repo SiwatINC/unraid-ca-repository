@@ -7,6 +7,7 @@
   <Project>https://machinebox.io/docs/facebox</Project>
   <Overview>
     Facebox detects and identifies faces in photos. You can teach facebox with as little as one sample image.
+    Facebox required that you have an API Key which you can obtain for free by going to https://machinebox.io/login?return_url=%2Faccount
   </Overview>
   <Description>Facebox required that you have an API Key which you can obtain for free by going to https://machinebox.io/login?return_url=%2Faccount [br][br]</Description>
   <Registry>https://hub.docker.com/r/machinebox/facebox/</Registry>
