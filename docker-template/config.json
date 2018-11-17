@@ -14,7 +14,7 @@
       "platform": "config",
       "name": "Config",
       "port": 8124,
-      "sudo": false
+      "sudo": true
     }
   ]
 }
