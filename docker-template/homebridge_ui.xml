@@ -6,7 +6,7 @@
   <Name>HomeBridge with webGUI</Name>
   <Project>https://github.com/nfarina/homebridge/</Project>
   <Overview>
-    Homebridge with GUI is a lightweight NodeJS server you can run on your home network that emulates the iOS HomeKit API. It supports Plugins, which are community-contributed modules that provide a basic bridge from HomeKit to various 3rd-party APIs provided by manufacturers of "smart home" devices.
+    Homebridge with GUI (default user:pass=admin:admin) is a lightweight NodeJS server you can run on your home network that emulates the iOS HomeKit API. It supports Plugins, which are community-contributed modules that provide a basic bridge from HomeKit to various 3rd-party APIs provided by manufacturers of "smart home" devices.
     Instruction:
       1. in the "packages" variable, place the all packages name you wanted in the box seperated by space (Example is in the box, Plugin list is in https://www.npmjs.com/search?q=homebridge-plugin)
       2. create the container
