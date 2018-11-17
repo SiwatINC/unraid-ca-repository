@@ -1,0 +1,8 @@
+"platforms": [
+    {
+      "platform": "config",
+      "name": "Config",
+      "port": 8124,
+      "sudo": false
+    }
+]
