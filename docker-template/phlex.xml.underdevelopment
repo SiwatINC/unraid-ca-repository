@@ -1,1 +1,37 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2018-11-20</Date>
+  <Beta>False</Beta>
+  <Category>Tools</Category>
+  <Name>Phlex</Name>
+  <Project>https://github.com/d8ahazard/Phlex</Project>
+  <Overview>
+    Flex TV. is a web application that interfaces between google Assistant and Plex to allow you to control playback of media using Actions for Google or IFTTT.
+    Additionally, it interfaces with the API’s for Sonarr, Radarr, Couchpotato, Sickbeard, and Sickrage.
+    It also has customizeable webhooks, so you can basically control anything that has an open API with your voice. If you can send data to a URL to do a thing, you can program it in Flex TV.
+  </Overview>
+  <Description>
+    Flex TV. is a web application that interfaces between google Assistant and Plex to allow you to control playback of media using Actions for Google or IFTTT.
+    Additionally, it interfaces with the API’s for Sonarr, Radarr, Couchpotato, Sickbeard, and Sickrage.
+    It also has customizeable webhooks, so you can basically control anything that has an open API with your voice. If you can send data to a URL to do a thing, you can program it in Flex TV.
+  </Description>
+  <Registry>https://hub.docker.com/r/siwatinc/phlex_unraid/</Registry>
+  <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
+  <Repository>siwatinc/phlex_unraid</Repository>
+  <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/phlex</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Networking>
+    <Mode>host</Mode>
+  </Networking>
+  <WebUI>http://[IP]:[PORT:8063]</WebUI>
+  <Banner></Banner>
+  <Icon>https://i1.wp.com/www.deviousweb.com/wp-content/uploads/2017/06/HomeKit.png</Icon>
+</Containers>
