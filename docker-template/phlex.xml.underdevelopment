@@ -33,5 +33,5 @@
   </Networking>
   <WebUI>http://[IP]:[PORT:8063]</WebUI>
   <Banner></Banner>
-  <Icon>https://i1.wp.com/www.deviousweb.com/wp-content/uploads/2017/06/HomeKit.png</Icon>
+  <Icon>https://github.com/d8ahazard/Phlex/raw/master/img/android-icon-144x144.png</Icon>
 </Containers>
