@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2018-11-21</Date>
+  <Beta>False</Beta>
+  <Category>HomeAutomation Tools</Category>
+  <Name>Home Assistant Control Panel</Name>
+  <Project>https://reformedreality.com/home-assistant-control-panel</Project>
+  <Overview>Using a phone or tablet device you can hook into your Home Assistant server and get access to a simple to use Control Panel. Mount the device on your wall to create the ultimate home automation accessory and unlock the true potential of your Smart devices.
+  API Setup Instruction: https://reformedreality.com/home-assistant-control-panel#api-setup</Overview>
+  <Description>Using a phone or tablet device you can hook into your Home Assistant server and get access to a simple to use Control Panel. Mount the device on your wall to create the ultimate home automation accessory and unlock the true potential of your Smart devices.
+  API Setup Instruction: https://reformedreality.com/home-assistant-control-panel#api-setup</Description>
+  <Registry>https://hub.docker.com/r/siwatinc/home_assistant_control_panel_unraid/</Registry>
+  <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
+  <Repository>siwatinc/home_assistant_control_panel_unraid</Repository>
+  <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8033</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <WebUI>http://[IP]:[PORT:8033]</WebUI>
+  <Banner></Banner>
+  <Icon>https://reformedreality.com/apple-touch-icon.png</Icon>
+</Containers>
