@@ -43,5 +43,8 @@
     <Mode>host</Mode>
   </Networking>
   <Banner></Banner>
+  <DonateText>If you like it, then consider buying me a soda as I don't like beer :P</DonateText>
+  <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
   <Icon>https://i1.wp.com/www.deviousweb.com/wp-content/uploads/2017/06/HomeKit.png</Icon>
 </Containers>
