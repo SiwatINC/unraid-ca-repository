@@ -42,6 +42,9 @@
   <Networking>
     <Mode>host</Mode>
   </Networking>
+  <DonateText>If you like it, then consider buying me a soda as I don't like beer :P</DonateText>
+  <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
   <WebUI>http://[IP]:[PORT:8124]</WebUI>
   <Banner></Banner>
   <Icon>https://i1.wp.com/www.deviousweb.com/wp-content/uploads/2017/06/HomeKit.png</Icon>
