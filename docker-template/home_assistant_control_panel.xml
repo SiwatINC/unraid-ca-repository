@@ -25,6 +25,9 @@
       </Port>
     </Publish>
   </Networking>
+  <DonateText>If you like it, then consider buying me a soda as I don't like beer :P</DonateText>
+  <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
   <WebUI>http://[IP]:[PORT:8033]</WebUI>
   <Banner></Banner>
   <Icon>https://reformedreality.com/apple-touch-icon.png</Icon>
