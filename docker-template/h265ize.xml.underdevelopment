@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2018-11-16</Date>
+  <Beta>False</Beta>
+  <Category>HomeAutomation Tools</Category>
+  <Name>H265ize</Name>
+  <Project>https://github.com/FallingSnow/h265ize</Project>
+  <Overview>h265ize is a fire and forget weapon. A nodejs utility utilizing ffmpeg to encode large quantities of videos with the hevc codec. For more information visit ayrton.sparling.us.
+   if you want to create the hvec file alongside your input file, put in the parent directory of your input For example: if your input is in /mnt/user/cache/medialib/mymedia/ set your output to /mnt/user/cache/medialib/</Overview>
+  <Description>
+    Instruction:
+      1. in the "packages" variable, place the all packages name you wanted in the box seperated by space (Example is in the box, Plugin list is in https://www.npmjs.com/search?q=homebridge-plugin)
+      2. create the container
+      3. create the config.json in the homebridge directory (/mnt/user/appdata/homebridge/config.json)
+      4. add your devices to the config.json by refering to https://github.com/nfarina/homebridge
+  </Description>
+  <Registry>https://hub.docker.com/r/siwatinc/homebridge_gui_x_unraid/</Registry>
+  <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
+  <Repository>siwatinc/homebridge_gui_x_unraid</Repository>
+  <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>packages</Name>
+      <Value>homebridge-pilight homebridge-info homebridge-wemo</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/homebridge</HostDir>
+      <ContainerDir>/root/.homebridge</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Networking>
+    <Mode>host</Mode>
+  </Networking>
+  <DonateText>If you like it, then consider buying me a soda as I don't like beer :P</DonateText>
+  <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <WebUI>http://[IP]:[PORT:8124]</WebUI>
+  <Banner></Banner>
+  <Icon>https://i1.wp.com/www.deviousweb.com/wp-content/uploads/2017/06/HomeKit.png</Icon>
+</Containers>
