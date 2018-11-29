@@ -30,7 +30,7 @@
   <Config Name="Input Directory" Target="input" Default="/mnt/user/h265ize/input" Mode="" Description="The source folder that contain video files you want to re-encode" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Quantization Parameter" Target="qp" Default="19" Mode="" Description="Quantization Parameter, read the h265 docs for more info" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Output Format" Target="format" Default="mp4" Mode="" Description="mp4,mkv or m4v" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Quality Preset" Target="preset" Default="mp4" Mode="fast" Description="ultrafast, superfast, veryfast, faster, fast, medium, slow, slower, veryslow, placebo | https://x265.readthedocs.io/en/default/presets.html for more info" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Quality Preset" Target="preset" Default="fast" Mode="" Description="ultrafast, superfast, veryfast, faster, fast, medium, slow, slower, veryslow, placebo | https://x265.readthedocs.io/en/default/presets.html for more info" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Networking>
     <Mode>host</Mode>
   </Networking>
