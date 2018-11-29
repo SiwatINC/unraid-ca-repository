@@ -22,26 +22,6 @@
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Environment>
-    <Variable>
-      <Name>input</Name>
-      <Value>/mnt/user/h265ize/input</Value>
-    </Variable>
-    <Variable>
-      <Name>preset</Name>
-      <Value>fast</Value>
-    </Variable>
-    <Variable>
-      <Name>output</Name>
-      <Value>/mnt/user/h265ize/output</Value>
-    </Variable>
-    <Variable>
-      <Name>qp</Name>
-      <Value>19</Value>
-    </Variable>
-    <Variable>
-      <Name>format</Name>
-      <Value>mp4</Value>
-    </Variable>
   </Environment>
   <Data>
     <Volume>
@@ -51,7 +31,7 @@
     </Volume>
   </Data>
   <Config Name="mnt Directory" Target="/mnt" Default="/mnt" Mode="rw" Description="This is the mnt directory of your unraid server&amp;lt;br&amp;gt;Container path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
-  <Config Name="Output Directory" Target="output" Default="/mnt/user/h265ize/output" Mode="" Description="The destination folder where you want your re-encoded video to be (recomended to be the parent directory of your input if you are planning to replace your source)" Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="Output Directory" Target="output" Default="/mnt/user/h265ize/output" Mode="" Description="The destination folder where you want your re-encoded video to be (recomended to be the parent directory of your input if you are planning to replace your source)" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Input Directory" Target="input" Default="/mnt/user/h265ize/input" Mode="" Description="The source folder that contain video files you want to re-encode" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Quantization Parameter" Target="qp" Default="19" Mode="" Description="Quantization Parameter, read the h265 docs for more info" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Output Format" Target="format" Default="mp4" Mode="" Description="mp4,mkv or m4v" Type="Variable" Display="always" Required="true" Mask="false"/>
