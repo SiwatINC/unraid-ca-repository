@@ -9,9 +9,9 @@
   API Setup Instruction: https://reformedreality.com/home-assistant-control-panel#api-setup</Overview>
   <Description>Using a phone or tablet device you can hook into your Home Assistant server and get access to a simple to use Control Panel. Mount the device on your wall to create the ultimate home automation accessory and unlock the true potential of your Smart devices.
   API Setup Instruction: https://reformedreality.com/home-assistant-control-panel#api-setup</Description>
-  <Registry>https://hub.docker.com/r/siwatinc/home_assistant_control_panel_unraid/</Registry>
+  <Registry>https://hub.docker.com/r/siwatinc/home_assistant_control_panel_unraid_ab//</Registry>
   <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
-  <Repository>siwatinc/home_assistant_control_panel_unraid</Repository>
+  <Repository>siwatinc/home_assistant_control_panel_unraid_ab</Repository>
   <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
