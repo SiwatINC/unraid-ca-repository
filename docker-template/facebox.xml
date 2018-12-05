@@ -17,10 +17,6 @@
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
-    <Variable>
-      <Name>MB_KEY</Name>
-      <Value>The API Key goes here!</Value>
-    </Variable>
   </Environment>
   <Networking>
     <Mode>bridge</Mode>
@@ -32,6 +28,7 @@
       </Port>
     </Publish>
   </Networking>
+  <Config Name="API_KEY" Target="MB_KEY" Default="" Mode="" Description="API Key From Machine Box" Type="Variable" Display="always" Required="true" Mask="false"/>
   <DonateText>If you like it, then consider buying me a soda as I don't like beer :P</DonateText>
   <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
   <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
