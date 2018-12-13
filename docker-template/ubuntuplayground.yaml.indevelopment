@@ -14,7 +14,7 @@
   </Description>
   <Registry>siwatinc/ubuntu-playground</Registry>
   <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
-  <Repository>siwatinc/h265ize_unraid</Repository>
+  <Repository>siwatinc/ubuntu-playground</Repository>
   <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
