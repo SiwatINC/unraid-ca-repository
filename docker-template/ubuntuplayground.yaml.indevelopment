@@ -7,16 +7,12 @@
   <Name>Ubuntu Playground</Name>
   <Project>https://github.com/FallingSnow/h265ize</Project>
   <Overview>
-   h265ize is a fire and forget weapon. A nodejs utility utilizing ffmpeg to encode large quantities of videos with the hevc codec. For more information visit ayrton.sparling.us.
-   [br][br]
-   if you want to create the hvec file alongside your input file, put in the parent directory of your input For example: if your input is in /mnt/user/cache/medialib/mymedia/ set your output to /mnt/user/cache/medialib/
+   Ubuntu Playground (NO GUI) is a place where you can play with ubuntu command NOTE: The data of the containter will be clear if you force update the container
   </Overview>
   <Description>
-   h265ize is a fire and forget weapon. A nodejs utility utilizing ffmpeg to encode large quantities of videos with the hevc codec. For more information visit ayrton.sparling.us.
-   [br][br]
-   if you want to create the hvec file alongside your input file, put in the parent directory of your input For example: if your input is in /mnt/user/cache/medialib/mymedia/ set your output to /mnt/user/cache/medialib/
+   Ubuntu Playground (NO GUI) is a place where you can play with ubuntu command NOTE: The data of the containter will be clear if you force update the container
   </Description>
-  <Registry>https://hub.docker.com/r/siwatinc/h265ize_unraid/builds/</Registry>
+  <Registry>siwatinc/ubuntu-playground</Registry>
   <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
   <Repository>siwatinc/h265ize_unraid</Repository>
   <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
