@@ -5,7 +5,7 @@
   <Beta>False</Beta>
   <Category>Tools</Category>
   <Name>Ubuntu Playground</Name>
-  <Project>https://github.com/FallingSnow/h265ize</Project>
+  <Project>https://www.ubuntu.com/</Project>
   <Overview>
    Ubuntu Playground (NO GUI) is a place where you can play with ubuntu command NOTE: The data of the containter will be clear if you force update the container
   </Overview>
