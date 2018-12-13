@@ -2,7 +2,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
   <Date>2018-12-13</Date>
-  <Beta>False</Beta>
+  <Beta>True</Beta>
   <Category>Tools</Category>
   <Name>Ubuntu Playground</Name>
   <Project>https://www.ubuntu.com/</Project>
