@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>esphomeyaml</Name>
+  <Repository>siwatinc/esphomeyaml</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
+  <Project/>
+  <Category>HomeAutomation Tools</Category>
+  <Overview>Esphomelib is a framework for creating custom firmwares for your WiFi-enabled ESP microcontrollers. Its primary focus is making the process to get your ESP running as simple as possible, with many helper tools to ensure you will have the best user experience.</Overview>
+  <Description>Esphomelib is a framework for creating custom firmwares for your WiFi-enabled ESP microcontrollers. Its primary focus is making the process to get your ESP running as simple as possible, with many helper tools to ensure you will have the best user experience.</Description>
+  <WebUI>https://[IP]:[PORT:6052]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/icons/esphomeyaml.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>6123</HostPort>
+        <ContainerPort>6123</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>6052</HostPort>
+        <ContainerPort>6052</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/esphomeyaml</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <DonateText>If you like it, then consider buying me a soda as I don't like beer :P</DonateText>
+  <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <Environment/>
+  <Labels/>
+  <Config Name="Configuration Folder" Target="/config" Default="/mnt/user/appdata/esphomeyaml" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/esphomeyaml</Config>
+  <Config Name="Communication" Target="6123" Default="6123" Mode="tcp" Description="Communication Port" Type="Port" Display="advanced" Required="false" Mask="false">6123</Config>
+  <Config Name="WebUI" Target="6052" Default="6052" Mode="tcp" Description="WebUI Port" Type="Port" Display="advanced" Required="false" Mask="false">6052</Config>
+</Container>
