@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>esphomeyaml</Name>
+  <Date>2019-01-07</Date>
   <Repository>siwatinc/esphomeyaml</Repository>
   <Registry/>
   <Network>bridge</Network>
