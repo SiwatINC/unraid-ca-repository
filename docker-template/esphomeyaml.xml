@@ -12,7 +12,7 @@
   <Category>HomeAutomation Tools</Category>
   <Overview>Esphomelib is a framework for creating custom firmwares for your WiFi-enabled ESP microcontrollers. Its primary focus is making the process to get your ESP running as simple as possible, with many helper tools to ensure you will have the best user experience.</Overview>
   <Description>Esphomelib is a framework for creating custom firmwares for your WiFi-enabled ESP microcontrollers. Its primary focus is making the process to get your ESP running as simple as possible, with many helper tools to ensure you will have the best user experience.</Description>
-  <WebUI>https://[IP]:[PORT:6052]/</WebUI>
+  <WebUI>http://[IP]:[PORT:6052]/</WebUI>
   <Icon>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/icons/esphomeyaml.png</Icon>
   <ExtraParams/>
   <PostArgs/>
