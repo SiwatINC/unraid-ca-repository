@@ -40,13 +40,18 @@
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+     <Volume>
+      <HostDir>/mnt/user/appdata/nginx-pagespeed/cache</HostDir>
+      <ContainerDir>/var/cache/nginx</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <DonateText>If you like it, then consider buying me a soda as I don't like beer :P</DonateText>
   <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
   <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
   <Environment/>
   <Labels/>
-  <Config Name="Configuration Folder" Target="/config" Default="/mnt/user/appdata/nginx-pagespeed" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/esphomeyaml</Config>
-  <Config Name="HTTP Port" Target="80" Default="81" Mode="tcp" Description="Port for the HTTP Protocol" Type="Port" Display="advanced" Required="true" Mask="false">80</Config>
-  <Config Name="HTTPS Port" Target="443" Default="444" Mode="tcp" Description="Port for the HTTPS Protocol (Not enabled by default)" Type="Port" Display="advanced" Required="true" Mask="false">443</Config>
+  <Config Name="Configuration Folder" Target="/config" Default="/mnt/user/appdata/nginx-pagespeed" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/nginx-pagespeed</Config>
+  <Config Name="HTTP Port" Target="80" Default="81" Mode="tcp" Description="Port for the HTTP Protocol" Type="Port" Display="advanced" Required="true" Mask="false">81</Config>
+  <Config Name="HTTPS Port" Target="443" Default="444" Mode="tcp" Description="Port for the HTTPS Protocol (Not enabled by default)" Type="Port" Display="advanced" Required="true" Mask="false">444</Config>
 </Container>
