@@ -10,8 +10,10 @@
   <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
   <Project/>
   <Category>Network DNS</Category>
-  <Overview>Esphomelib is a framework for creating custom firmwares for your WiFi-enabled ESP microcontrollers. Its primary focus is making the process to get your ESP running as simple as possible, with many helper tools to ensure you will have the best user experience.</Overview>
-  <Description>Esphomelib is a framework for creating custom firmwares for your WiFi-enabled ESP microcontrollers. Its primary focus is making the process to get your ESP running as simple as possible, with many helper tools to ensure you will have the best user experience.</Description>
+  <Overview>AdGuard Home is a network-wide software for blocking ads & tracking. After you set it up, it’ll cover ALL your home devices, and you don’t need any client-side software for that. With the rise of Internet-Of-Things and connected devices, it becomes more and more important to be able to control your whole network.
+</Overview>
+  <Description>AdGuard Home is a network-wide software for blocking ads & tracking. After you set it up, it’ll cover ALL your home devices, and you don’t need any client-side software for that. With the rise of Internet-Of-Things and connected devices, it becomes more and more important to be able to control your whole network.
+</Description>
   <WebUI>http://[IP]:[PORT:6052]/</WebUI>
   <Icon>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/icons/adguard.png</Icon>
   <ExtraParams/>
