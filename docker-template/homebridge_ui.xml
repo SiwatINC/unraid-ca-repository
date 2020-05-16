@@ -32,7 +32,7 @@
   </Data>
   <Config Name="Config Folder" Target="/root/.homebridge" Default="/mnt/user/appdata/homebridge" Mode="rw" Description="This is the Config Directory for the Homebridge Application" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="APT Packages" Target="aptpackages" Default="ffmpeg" Mode="" Description="The name of the apt packages you wish to install (Seperated by Space)" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Plugins" Target="packages" Default="homebridge-pilight homebridge-info homebridge-wemo" Mode="" Description="The name of the plugins you wish to install (Seperated by Space, They can be NPM Packages)" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Plugins" Target="packages" Default="homebridge-pilight homebridge-info" Mode="" Description="The name of the plugins you wish to install (Seperated by Space, They can be NPM Packages)" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Networking>
     <Mode>host</Mode>
   </Networking>
