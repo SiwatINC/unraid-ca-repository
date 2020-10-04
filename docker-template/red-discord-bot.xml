@@ -20,12 +20,10 @@
   </Environment>
   <Data>
   </Data>
-  <Config Name="mnt Directory" Target="/mnt" Default="/mnt" Mode="rw" Description="This is the mnt directory of your unraid server&amp;lt;br&amp;gt;Container path: /mnt" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
-  <Config Name="Output Directory" Target="output" Default="/mnt/user/h265ize/output" Mode="" Description="The destination folder where you want your re-encoded video to be (recomended to be the parent directory of your input if you are planning to replace your source)" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Input Directory" Target="input" Default="/mnt/user/h265ize/input" Mode="" Description="The source folder that contain video files you want to re-encode" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Quantization Parameter" Target="qp" Default="19" Mode="" Description="Quantization Parameter, read the h265 docs for more info" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Output Format" Target="format" Default="mp4" Mode="" Description="mp4,mkv or m4v" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Quality Preset" Target="preset" Default="fast" Mode="" Description="ultrafast, superfast, veryfast, faster, fast, medium, slow, slower, veryslow, placebo | https://x265.readthedocs.io/en/default/presets.html for more info" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Data Directory" Target="Enter your Discord Token Here" Default="" Mode="rw" Description="Data Directory to store presistance data" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="Discord Bot Token" Target="TOKEN" Default="Enter your Discord Token Here" Mode="" Description="Read the red discord bot documentation for more info" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Prefix" Target="prefix" Default="!" Mode="" Description="Prefix invocation" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Timezone" Target="TZ" Default="America/Detroit" Mode="" Description="Prefix invocation" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Networking>
     <Mode>host</Mode>
   </Networking>
