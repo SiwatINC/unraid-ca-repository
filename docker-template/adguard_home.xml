@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>AdGuard Home</Name>
   <Date>2019-07-11</Date>
-  <Repository>siwatinc/adguard_home</Repository>
+  <Repository>adguard/adguardhome</Repository>
   <Registry/>
   <Network>bridge</Network>
   <Shell>bash</Shell>
