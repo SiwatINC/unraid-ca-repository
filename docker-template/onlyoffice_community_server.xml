@@ -61,5 +61,5 @@
   <Environment/>
   <WebUI>http://[IP]:[PORT:8081]</WebUI>
   <Banner></Banner>
-  <Icon>https://pbs.twimg.com/profile_images/801693107125362689/al5MQBQM_normal.jpg</Icon>
+  <Icon>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/icons/onlyoffice.png</Icon>
 </Containers>
