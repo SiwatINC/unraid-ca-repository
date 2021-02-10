@@ -4,7 +4,7 @@
   <Beta>False</Beta>
   <Category>HomeAutomation Tools</Category>
   <Name>ZWaveJS2MQTT</Name>
-  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <WebUI>http://[IP]:[PORT:8091]</WebUI>
   <Project>https://github.com/zwave-js/zwavejs2mqtt</Project>
   <Overview>
    Fully configurable Zwave to MQTT Gateway and Control Panel.
