@@ -11,9 +11,9 @@
   <Description>
    Ubuntu Playground (NO GUI) is a place where you can play with ubuntu command NOTE The data of the containter will be clear if you force update the container Click on the container icon then click console to access it
   </Description>
-  <Registry>siwatinc/ubuntu-playground</Registry>
+  <Registry>https://github.com/orgs/SiwatINC/packages/container/package/ubuntu-playground</Registry>
   <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
-  <Repository>siwatinc/ubuntu-playground</Repository>
+  <Repository>ghcr.io/siwatinc/ubuntu-playground:latest</Repository>
   <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
