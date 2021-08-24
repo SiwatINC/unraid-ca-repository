@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>NGINXPageSpeed</Name>
   <Date>2019-02-03</Date>
-  <Repository>siwatinc/nginx-pagespeed</Repository>
+  <Repository>ghcr.io/siwatinc/nginx-pagespeed</Repository>
   <Registry/>
   <Network>bridge</Network>
   <Shell>bash</Shell>
