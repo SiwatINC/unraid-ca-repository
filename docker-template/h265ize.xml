@@ -15,9 +15,9 @@
    [br][br]
    if you want to create the hvec file alongside your input file, put in the parent directory of your input For example: if your input is in /mnt/user/cache/medialib/mymedia/ set your output to /mnt/user/cache/medialib/
   </Description>
-  <Registry>https://hub.docker.com/r/siwatinc/h265ize_unraid/builds/</Registry>
+  <Registry>https://github.com/SiwatINC/h265ize_unraid/pkgs/container/h265ize</Registry>
   <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
-  <Repository>siwatinc/h265ize_unraid</Repository>
+  <Repository>ghcr.io/siwatinc/h265ize</Repository>
   <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
