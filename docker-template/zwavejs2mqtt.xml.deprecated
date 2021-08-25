@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2021-02-11</Date>
+  <Beta>False</Beta>
+  <Category>HomeAutomation Tools</Category>
+  <Name>ZWaveJS2MQTT</Name>
+  <WebUI>http://[IP]:[PORT:8091]</WebUI>
+  <Project>https://github.com/zwave-js/zwavejs2mqtt</Project>
+  <Overview>
+   Fully configurable Zwave to MQTT Gateway and Control Panel.
+  </Overview>
+  <Description>
+    Configurable Zwave to Mqtt Gateway, Home Assistant integration (beta)
+  </Description>
+  <Registry>https://hub.docker.com/r/zwavejs/zwavejs2mqtt</Registry>
+  <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
+  <Repository>zwavejs/zwavejs2mqtt</Repository>
+  <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Config Name="Config Directory" Target="/usr/src/app/store" Default="/mnt/user/appdata/zwavejs2mqtt" Mode="rw" Description="This is where the Application store your config files&amp;lt;br&amp;gt;Container path: /usr/src/app/store" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Mask="false" Required="true" Display="always" Type="Device" Description="ls /dev/serial/by-id/" Mode="" Default="" Target="" Name="Dongle"/>
+  <Config Name="WebUI Port" Target="8091" Default="8091" Mode="tcp" Description="Port for the HTTP WebUI" Type="Port" Display="advanced" Required="true" Mask="false">8091</Config>
+  <Config Name="WebSocket Port" Target="3000" Default="3000" Mode="tcp" Description="Port for the WebSocket API" Type="Port" Display="advanced" Required="true" Mask="false">3000</Config>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <DonateText>If you like it, then consider buying me a soda as I don't like beer :P</DonateText>
+  <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <Banner></Banner>
+  <Icon>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/icons/zwavejs2mqtt.png</Icon>
+</Containers>

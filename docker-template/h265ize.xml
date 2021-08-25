@@ -15,9 +15,9 @@
    [br][br]
    if you want to create the hvec file alongside your input file, put in the parent directory of your input For example: if your input is in /mnt/user/cache/medialib/mymedia/ set your output to /mnt/user/cache/medialib/
   </Description>
-  <Registry>https://hub.docker.com/r/siwatinc/h265ize_unraid/builds/</Registry>
+  <Registry>https://github.com/SiwatINC/h265ize_unraid/pkgs/container/h265ize</Registry>
   <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
-  <Repository>siwatinc/h265ize_unraid</Repository>
+  <Repository>ghcr.io/siwatinc/h265ize</Repository>
   <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
@@ -25,7 +25,8 @@
   </Environment>
   <Data>
   </Data>
-  <Config Name="mnt Directory" Target="/mnt" Default="/mnt" Mode="rw" Description="This is the mnt directory of your unraid server&amp;lt;br&amp;gt;Container path: /mnt" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="temp Directory" Target="/mnt" Default="/mnt" Mode="rw" Description="This is the mnt directory of your unraid server&amp;lt;br&amp;gt;Container path: /mnt" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="mnt Directory" Target="/tmp" Default="/mnt/user/h265ize/temp" Mode="rw" Description="This is the temp storage directory to store your current conversion&amp;lt;br&amp;gt;Container path: /tmp" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="Output Directory" Target="output" Default="/mnt/user/h265ize/output" Mode="" Description="The destination folder where you want your re-encoded video to be (recomended to be the parent directory of your input if you are planning to replace your source)" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Input Directory" Target="input" Default="/mnt/user/h265ize/input" Mode="" Description="The source folder that contain video files you want to re-encode" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Quantization Parameter" Target="qp" Default="19" Mode="" Description="Quantization Parameter, read the h265 docs for more info" Type="Variable" Display="always" Required="true" Mask="false"/>

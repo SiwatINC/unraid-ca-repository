@@ -20,9 +20,9 @@
       3. create the config.json in the homebridge directory (/mnt/user/appdata/homebridge/config.json)
       4. add your devices to the config.json by refering to https://github.com/nfarina/homebridge
   </Description>
-  <Registry>https://hub.docker.com/r/siwatinc/homebridge_gui_unraid/</Registry>
+  <Registry>https://github.com/SiwatINC/homebridge_gui/pkgs/container/homebridge_gui</Registry>
   <GitHub>https://github.com/SiwatINC/unraid-ca-repository</GitHub>
-  <Repository>siwatinc/homebridge_gui_unraid</Repository>
+  <Repository>ghcr.io/siwatinc/homebridge_gui</Repository>
   <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
@@ -32,7 +32,7 @@
   </Data>
   <Config Name="Config Folder" Target="/root/.homebridge" Default="/mnt/user/appdata/homebridge" Mode="rw" Description="This is the Config Directory for the Homebridge Application" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="APT Packages" Target="aptpackages" Default="ffmpeg" Mode="" Description="The name of the apt packages you wish to install (Seperated by Space)" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Plugins" Target="packages" Default="homebridge-pilight homebridge-info homebridge-wemo" Mode="" Description="The name of the plugins you wish to install (Seperated by Space, They can be NPM Packages)" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Plugins" Target="packages" Default="homebridge-pilight homebridge-info" Mode="" Description="The name of the plugins you wish to install (Seperated by Space, They can be NPM Packages)" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Networking>
     <Mode>host</Mode>
   </Networking>

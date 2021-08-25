@@ -16,9 +16,7 @@
   <Icon>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/icons/esphomeyaml.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
-  <Description/>
+  <Config Name="Dashboard Password" Target="password" Default="changeme" Mode="" Description="The Password for ESPHOME Dashboard" Type="Variable" Display="always" Required="true" Mask="true"/>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
