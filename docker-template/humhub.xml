@@ -44,5 +44,5 @@
   <Environment/>
   <Labels/>
   <Config Name="Configuration Folder" Target="/config" Default="/mnt/user/appdata/humhub" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/humhub</Config>
-  <Config Name="HTTP Port" Target="80" Default="85" Mode="tcp" Description="Port for the HTTP Protocol" Type="Port" Display="advanced" Required="true" Mask="false">81</Config>
+  <Config Name="HTTP Port" Target="80" Default="85" Mode="tcp" Description="Port for the HTTP Protocol" Type="Port" Display="advanced" Required="true" Mask="false">85</Config>
 </Container>
