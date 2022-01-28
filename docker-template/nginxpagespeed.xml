@@ -12,7 +12,7 @@
   <Category>Network:Web</Category>
   <Overview>NGINX OpenSource Build with PageSpeed, The PageSpeed modules are open-source server modules that optimize your site automatically.</Overview>
   <Description>NGINX OpenSource Build with PageSpeed, The PageSpeed modules are open-source server modules that optimize your site automatically.</Description>
-  <WebUI>http://[IP]:[PORT:81]/</WebUI>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <Icon>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/icons/pagespeed_32dp.png</Icon>
   <ExtraParams/>
   <PostArgs/>
