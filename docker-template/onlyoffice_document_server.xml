@@ -64,7 +64,7 @@
   <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
   <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
   <Environment/>
-  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <Banner></Banner>
   <Icon>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/icons/onlyoffice.png</Icon>
 </Containers>
