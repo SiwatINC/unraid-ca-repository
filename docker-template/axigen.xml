@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2022-08-06</Date>
+  <Beta>False</Beta>
+  <Category>Productivity</Category>
+  <Name>Axigen Mail Server</Name>
+  <Network>br0</Network>
+  <WebUI>http://[IP]:[PORT:9000]</WebUI>
+  <Project>https://www.axigen.com/</Project>
+  <Overview>
+   Axigen Mail Server, Please read https://github.com/SiwatINC/axigen-antispam first! 
+   The free licence allow you to have 5 users accross 5 domains
+  </Overview>
+  <Description>
+    Axigen Mail Server, Please read https://github.com/SiwatINC/axigen-antispam first! 
+    The free licence allow you to have 5 users accross 5 domains
+  </Description>
+  <Registry>https://hub.docker.com/r/axigen/axigen</Registry>
+  <Repository>axigen/axigen</Repository>
+  <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Config Name="data" Target="/var/opt/axigen" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/axigen</Config>
+  <DonateText>If you like it, then consider buying me a soda as I don't like beer :P</DonateText>
+  <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <Icon>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/icons/axigen.png</Icon>
+</Containers>
