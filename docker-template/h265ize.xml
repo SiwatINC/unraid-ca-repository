@@ -20,7 +20,7 @@
   <Repository>ghcr.io/siwatinc/h265ize</Repository>
   <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
   <BindTime>true</BindTime>
-  <Privileged>true</Privileged>
+  <Privileged>false</Privileged>
   <Environment>
   </Environment>
   <Data>
