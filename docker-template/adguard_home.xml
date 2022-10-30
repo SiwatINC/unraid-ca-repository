@@ -4,7 +4,7 @@
   <Date>2019-07-11</Date>
   <Repository>adguard/adguardhome</Repository>
   <Registry/>
-  <Network>bridge</Network>
+  <Network>br0</Network>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
