@@ -18,33 +18,6 @@
   <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/onlyofficeds/logs</HostDir>
-      <ContainerDir>/var/log/onlyoffice</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/onlyofficeds/Data</HostDir>
-      <ContainerDir>/var/www/onlyoffice/Data</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/onlyofficeds/lib</HostDir>
-      <ContainerDir>/var/lib/onlyoffice</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/onlyofficeds/database</HostDir>
-      <ContainerDir>/var/lib/postgresql</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/onlyofficeds/fonts</HostDir>
-      <ContainerDir>/usr/share/fonts/</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -60,6 +33,10 @@
       </Port>
     </Publish>
   </Networking>
+  <Config Name="Log Directory" Target="/var/log/onlyoffice" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/onlyofficeds/logs</Config>
+  <Config Name="Data Directory" Target="/var/www/onlyoffice/Data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/onlyofficeds/Data</Config>
+  <Config Name="Database Directory" Target="/var/www/onlyoffice/Data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/onlyofficeds/database</Config>
+  <Config Name="Font Directory" Target="/usr/share/fonts" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/onlyofficeds/fonts</Config>
   <Config Name="Secret Key" Target="JWT_SECRET" Default="secret123" Mode="" Description="API Secret Key" Type="Variable" Display="always" Required="true" Mask="true"/>
   <DonateText>If you like it, then consider buying me a soda as I don't like beer :P</DonateText>
   <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
