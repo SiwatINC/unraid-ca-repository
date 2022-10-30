@@ -20,24 +20,9 @@
   <Privileged>false</Privileged>
   <Networking>
     <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8081</HostPort>
-        <ContainerPort>80</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>4431</HostPort>
-        <ContainerPort>443</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>5222</HostPort>
-        <ContainerPort>5222</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
   </Networking>
+  <Config Name="HTTP Port" Target="80" Default="8081" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8081</Config>
+  <Config Name="HTTPS Port" Target="443" Default="4431" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">4431</Config>
   <Config Name="Log Directory" Target="/var/log/onlyoffice" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/onlyofficecs/logs</Config>
   <Config Name="Data Directory" Target="/var/www/onlyoffice/Data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/onlyofficecs/Data</Config>
   <Config Name="Database Directory" Target="/var/lib/mysql" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/onlyofficecs/database</Config>
@@ -45,7 +30,7 @@
   <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
   <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
   <Environment/>
-  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <WebUI>http://[IP]:[PORT:8081]</WebUI>
   <Banner></Banner>
   <Icon>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/icons/onlyoffice.png</Icon>
 </Containers>

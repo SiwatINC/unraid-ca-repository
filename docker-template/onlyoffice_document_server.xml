@@ -20,19 +20,9 @@
   <Privileged>false</Privileged>
   <Networking>
     <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8080</HostPort>
-        <ContainerPort>80</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>4430</HostPort>
-        <ContainerPort>443</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
   </Networking>
+  <Config Name="HTTP Port" Target="80" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="HTTPS Port" Target="443" Default="4430" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">4430</Config>
   <Config Name="Log Directory" Target="/var/log/onlyoffice" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/onlyofficeds/logs</Config>
   <Config Name="Data Directory" Target="/var/www/onlyoffice/Data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/onlyofficeds/Data</Config>
   <Config Name="Database Directory" Target="/var/www/onlyoffice/Data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/onlyofficeds/database</Config>
