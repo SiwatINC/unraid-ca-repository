@@ -1,35 +1,65 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>AdGuard Home</Name>
-  <Date>2019-07-11</Date>
+  <Name>Adguard-Home</Name>
   <Repository>adguard/adguardhome</Repository>
-  <Registry/>
+  <Registry>https://registry.hub.docker.com/r/adguard/adguardhome</Registry>
   <Network>br0</Network>
+  <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
   <Project/>
-  <Category>Network DNS</Category>
-  <Overview>AdGuard Home is a network-wide software for blocking ads &amp; tracking. After you set it up, it’ll cover ALL your home devices, and you don’t need any client-side software for that. With the rise of Internet-Of-Things and connected devices, it becomes more and more important to be able to control your whole network.
+  <Overview>AdGuard Home is a network-wide software for blocking ads &amp;amp; tracking. After you set it up, it&#x2019;ll cover ALL your home devices, and you don&#x2019;t need any client-side software for that. With the rise of Internet-Of-Things and connected devices, it becomes more and more important to be able to control your whole network.&#xD;
 </Overview>
-  <Description>AdGuard Home is a network-wide software for blocking ads &amp; tracking. After you set it up, it’ll cover ALL your home devices, and you don’t need any client-side software for that. With the rise of Internet-Of-Things and connected devices, it becomes more and more important to be able to control your whole network.
-</Description>
+  <Category>Network DNS</Category>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/docker-template/adguard_home.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/icons/adguard.png</Icon>
   <ExtraParams/>
   <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1669639451</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>AdGuard Home is a network-wide software for blocking ads &amp;amp; tracking. After you set it up, it&#x2019;ll cover ALL your home devices, and you don&#x2019;t need any client-side software for that. With the rise of Internet-Of-Things and connected devices, it becomes more and more important to be able to control your whole network.&#xD;
+</Description>
   <Networking>
-    <Mode>bridge</Mode>
+    <Mode>br0</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3000</HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>53</HostPort>
+        <ContainerPort>53</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>53</HostPort>
+        <ContainerPort>53</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
   </Networking>
   <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/adguard/workingdir</HostDir>
+      <ContainerDir>/opt/adguardhome/work</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/adguard/config</HostDir>
+      <ContainerDir>/opt/adguardhome/conf</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
-  <DonateText>If you like it, then consider buying me a soda as I don't like beer :P</DonateText>
-  <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
-  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
   <Environment/>
   <Labels/>
-  <Config Name="Working Directory" Target="/opt/adguardhome/work" Default="/mnt/user/appdata/adguard_home/workingdir" Mode="rw" Description="Working Directory" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/adguard_home/workingdir</Config>
-    <Config Name="Working Directory" Target="/opt/adguardhome/conf" Default="/mnt/user/appdata/adguard_home/config" Mode="rw" Description="Configuration Directory" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/adguard_home/config</Config>
-  <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Port for the Web UI" Type="Port" Display="advanced" Required="false" Mask="false">3000</Config>
-  <Config Name="DNS Server" Target="53" Default="53" Mode="tcp" Description="Port that is used for the DNS Server (Changing this is not recomended)" Type="Port" Display="advanced" Required="false" Mask="false">53</Config>
+  <Config Name="Working Directory" Target="/opt/adguardhome/work" Default="/mnt/user/appdata/adguard_home/workingdir" Mode="rw" Description="/opt/adguardhome/work" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/adguard/workingdir</Config>
+  <Config Name="Working Directory" Target="/opt/adguardhome/conf" Default="/mnt/user/appdata/adguard_home/config" Mode="rw" Description="Configuration Directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/adguard/config</Config>
+  <Config Name="WebUI" Target="3000" Default="3000" Mode="tcp" Description="Port of the Web UI" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="DNS Server TCP" Target="53" Default="53" Mode="tcp" Description="TCP Port that is used for the DNS Server (Changing this is not recomended)" Type="Port" Display="advanced" Required="false" Mask="false">53</Config>
+  <Config Name="DNS Server UDP" Target="53" Default="" Mode="udp" Description="UDP Port that is used for the DNS Server (Changing this is not recomended)" Type="Port" Display="advanced" Required="false" Mask="false">53</Config>
 </Container>
