@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Adguard Home</Name>
+  <Name>AdGuard Home</Name>
   <Repository>adguard/adguardhome</Repository>
   <Registry>https://registry.hub.docker.com/r/adguard/adguardhome</Registry>
   <Network>br0</Network>
