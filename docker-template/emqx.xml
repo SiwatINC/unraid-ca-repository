@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>EMQX</Name>
+  <Date>2022-12-20</Date>
+  <Repository>emqx/emqx</Repository>
+  <Network>bridge</Network>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/emqx/emqx</Support>
+  <Category>Network:Web</Category>
+  <Overview>EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.</Overview>
+  <Description>EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.</Description>
+  <WebUI>http://[IP]:[PORT:18083]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/SiwatINC/unraid-ca-repository/master/icons/emqx.png</Icon>
+  <DonateText>If you like it, then consider buying me a soda as I don't like beer :P</DonateText>
+  <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <Environment/>
+  <Labels/>
+  <Config Name="Data Directory" Target="/opt/emqx/data" Default="/mnt/user/appdata/emqx/data" Mode="rw" Description="Container Path: /opt/emqx/data" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/emqx/data</Config>
+    <Config Name="Etc Directory" Target="/opt/emqx/etc" Default="/mnt/user/appdata/emqx/etc" Mode="rw" Description="Container Path: /opt/emqx/etc" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/emqx/etc</Config>
+      <Config Name="Log Directory" Target="/opt/emqx/log" Default="/mnt/user/appdata/emqx/log" Mode="rw" Description="Container Path: /opt/emqx/log" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/emqx/log</Config>
+  <Config Name="MQTT Port" Target="1883" Default="1883" Mode="tcp" Description="Port for the MQTT Protocol" Type="Port" Display="advanced" Required="true" Mask="false">1883</Config>
+  <Config Name="WebUI Port" Target="18083" Default="18083" Mode="tcp" Description="Port for the HTTP Dashboard" Type="Port" Display="advanced" Required="true" Mask="false">18083</Config>
+</Container>
