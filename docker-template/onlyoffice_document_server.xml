@@ -25,7 +25,6 @@
   <Config Name="HTTPS Port" Target="443" Default="4430" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">4430</Config>
   <Config Name="Log Directory" Target="/var/log/onlyoffice" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/onlyofficeds/logs</Config>
   <Config Name="Data Directory" Target="/var/www/onlyoffice/Data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/onlyofficeds/Data</Config>
-  <Config Name="Database Directory" Target="/var/www/onlyoffice/Data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/onlyofficeds/database</Config>
   <Config Name="Font Directory" Target="/usr/share/fonts" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/onlyofficeds/fonts</Config>
   <Config Name="Secret Key" Target="JWT_SECRET" Default="secret123" Mode="" Description="API Secret Key" Type="Variable" Display="always" Required="true" Mask="true"/>
   <DonateText>If you like it, then consider buying me a soda as I don't like beer :P</DonateText>
