@@ -20,7 +20,7 @@
   <Support>https://forums.unraid.net/topic/75588-support-siwats-docker-repository/</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Config Name="data" Target="/var/opt/axigen" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/axigen</Config>
+  <Config Name="data" Target="/axigen/var" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/axigen</Config>
   <DonateText>If you like it, then consider buying me a soda as I don't like beer :P</DonateText>
   <DonateLink>https://www.paypal.me/siwatsirichai</DonateLink>
   <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
